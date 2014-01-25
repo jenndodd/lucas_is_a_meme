@@ -17,7 +17,9 @@ pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #3e94cf;
+  background-image: url('../images/subway2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
@@ -33,18 +35,29 @@ pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
 h1 {
   color: #FFF;
   font-size: 36px;
+  line-height: 40px;
   text-align: center;
-  padding: 50px;
+  padding: 20px 10px;
 }
 
 img {
   box-shadow: 0px 0px 20px #333;
+  width: 600px;
 }
 
-.lucas-for-now {
-  margin: 0 auto;
-  width: 600px;
-  padding-top: 50px;
+.left {
+  float: left;
+  width: 660px;
+  margin-top: 75px;
+}
+
+.right {
+  background-color: #3e94cf;
+  box-shadow: 0px 0px 20px #333;
+  float: right;
+  height: 462px;
+  margin-top: 75px;
+  width: 300px;
 }
 
 
