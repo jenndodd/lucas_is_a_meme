@@ -1,1 +1,52 @@
-/* lucas_is_a_meme
+
+/*
+ * Reset.
+ */
+
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote,  
+pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+
+
+
+/*
+ * Basic Layout.
+ */
+
+ body{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #3e94cf;
+
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+h1 {
+  color: #FFF;
+  font-size: 36px;
+  text-align: center;
+  padding: 50px;
+}
+
+img {
+  box-shadow: 0px 0px 20px #333;
+}
+
+.lucas-for-now {
+  margin: 0 auto;
+  width: 600px;
+  padding-top: 50px;
+}
+
+
+
+
