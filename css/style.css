@@ -35,30 +35,52 @@ pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
 
 h1 {
   color: #3e94cf;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 38px;
   text-align: center;
   padding: 20px;
 }
 
-.left img {
-  box-shadow: 0px 0px 20px #333;
-  width: 600px;
-}
+
 
 .left {
+  background-image: url('../images/lucas-is-a-meme.jpg');
   float: left;
-  width: 660px;
+  box-shadow: 0px 0px 20px #333;
+  width: 630px;
+  height: 484px;
   margin-top: 75px;
+  margin-right: 30px;
+}
+.text-line {
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-left: 56px;
+}
+
+.text-line:first-child {
+    margin-top: 110px;
+}
+
+.grey{
+  color: #888;
+}
+
+.black {
+  color: #000;
+  padding-top: 7px;
 }
 
 .right {
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .75);
   box-shadow: 0px 0px 20px #333;
   float: right;
-  height: 462px;
+  height: 485px;
   margin-top: 75px;
   width: 300px;
+  position: relative;
 }
 
 input {
@@ -72,7 +94,6 @@ input {
   padding: 20px;
 }
 
-
 .save-button {
   background-color: rgb(52, 152, 219);
   border: none;
@@ -81,8 +102,8 @@ input {
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 25px;
-  margin: 0 auto;
-
+  margin: 35px auto;
+  width: 90px;
 }
 .save-button:hover {
   background-color: rgba(52, 152, 219, .8);
@@ -98,7 +119,7 @@ input {
 }
 
 footer {
-  padding: 20px;
+  padding: 30px;
   margin: 0 auto;
   width: 100px;
 }
