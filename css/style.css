@@ -35,14 +35,17 @@ pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
 
 h1 {
   color: #3e94cf;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
-  line-height: 38px;
+  font-weight: bold;
+  line-height: 32px;
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
 }
 
-
+/*
+ * Left section.
+ */
 
 .left {
   background-image: url('../images/lucas-is-a-meme.jpg');
@@ -73,6 +76,10 @@ h1 {
   padding-top: 7px;
 }
 
+/*
+ * Right section.
+ */
+
 .right {
   background-color: rgba(255, 255, 255, .75);
   box-shadow: 0px 0px 20px #333;
@@ -85,13 +92,27 @@ h1 {
 
 input {
 
-  padding: 3px;
+  padding: 5px;
   margin-left: 70px;
   width: 150px;
 }
 
 .input-line {
   padding: 20px;
+  background-repeat: no-repeat;
+  background-position: 25px 12px;
+}
+
+.input-line.one {
+  background-image: url('../images/1.png');
+}
+
+.input-line.two {
+  background-image: url('../images/2.png');
+}
+
+.input-line.three {
+  background-image: url('../images/3.png');
 }
 
 .save-button {
@@ -103,9 +124,10 @@ input {
   display: block;
   border-radius: 4px;
   padding: 10px 25px;
-  margin: 35px auto;
+  margin: 20px auto 10px auto;
   width: 90px;
 }
+
 .save-button:hover {
   background-color: rgba(52, 152, 219, .8);
 }
@@ -117,6 +139,42 @@ input {
   font-family: 'Helvetica', 'Arial', sans-serif;
   text-align: center;
   text-decoration: none;
+}
+
+.gallery-link {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  text-align: center;
+}
+
+.gallery-link a {
+  color: #2c6e9b;
+  text-decoration: none;
+}
+
+.gallery-link a:hover {
+  color: #3e94cf;
+  text-decoration: underline;
+}
+
+ul.share {
+  width: 90px;
+  margin: 25px auto;
+}
+
+.share li {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+.share li:hover {
+  opacity: .8;
+}
+
+.share li:first-child {
+  padding-right: 5px;
 }
 
 footer {
