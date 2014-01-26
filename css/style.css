@@ -36,15 +36,6 @@ canvas{
   width: 960px;
 }
 
-h1 {
-  color: #3e94cf;
-  font-size: 36px;
-  font-weight: bold;
-  font-weight: bold;
-  line-height: 32px;
-  text-align: center;
-  padding: 25px 20px 15px 20px;
-}
 
 /*
  * Left section.
@@ -102,6 +93,17 @@ h1 {
   position: relative;
 }
 
+.banner {
+  width: 275px;
+  margin: 0 auto 20px auto;
+  text-indent: -9999px;
+}
+
+.banner img {
+  display: block;
+  width:275px;
+}
+
 input {
   padding: 5px;
   margin-left: 77px;
@@ -139,7 +141,7 @@ input#second-line{
   display: block;
   border-radius: 4px;
   padding: 10px 25px;
-  margin: 20px auto 10px auto;
+  margin: 25px auto 10px auto;
   width: 90px;
 }
 
@@ -173,7 +175,11 @@ input#second-line{
   text-decoration: underline;
 }
 
-ul.share {
+/*
+ * Share buttons
+ */
+
+/*ul.share {
   width: 90px;
   margin: 25px auto;
 }
@@ -191,6 +197,7 @@ ul.share {
 .share li:first-child {
   padding-right: 5px;
 }
+*/
 
 footer {
   padding: 30px;
@@ -221,6 +228,28 @@ ul.gallery-list{
   width: 300px;
 }
 
+/*
+ *Media Queries for mobile meme makers
+ */
 
+ @media (max-width: 959px) {
+  .container {
+    margin: 0 auto;
+    width: 640px;
+  }
+
+  .left {
+    float:none;
+    margin: 75px auto 0px auto;
+  }
+
+  .right {
+    float: none;
+    margin: 30px auto;
+  }
+  
+
+
+}
 
 

@@ -1,0 +1,17 @@
+@media (max-width: 959px) {
+  .container {
+    margin: 0 auto;
+    width: 640px;
+  }
+
+  ul.gallery-list{
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 639px) {
+  .container {
+    margin: 0 auto;
+    width: 320px;
+  }
+}
