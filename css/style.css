@@ -23,6 +23,10 @@ pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
 
 }
 
+canvas{
+  width: 630px;
+  height: 484px;
+}
 
 .clear {
   clear: both;
@@ -40,7 +44,7 @@ h1 {
   font-weight: bold;
   line-height: 32px;
   text-align: center;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
 }
 
 /*
@@ -61,10 +65,19 @@ h1 {
   font-weight: bold;
   line-height: 40px;
   margin-left: 56px;
+  position: absolute;
+  top: 0;
 }
 
-.text-line:first-child {
-    margin-top: 110px;
+#first-line-holder.text-line{
+  margin-top: 184px;
+}
+#second-line-holder.text-line{
+  margin-top: 223px;
+  text-transform: uppercase;
+}
+#third-line-holder.text-line{
+  margin-top: 268px;
 }
 
 .grey{
@@ -91,10 +104,13 @@ h1 {
 }
 
 input {
-
   padding: 5px;
   margin-left: 70px;
   width: 150px;
+}
+
+input#second-line{
+  text-transform: uppercase;
 }
 
 .input-line {

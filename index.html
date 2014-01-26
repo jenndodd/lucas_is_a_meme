@@ -24,20 +24,22 @@
         <div class="container">
             
             <div class="left">
-                <div class="text-line grey">has a</div>
-                <div class="text-line black">MEME</div>
-                <div class="text-line grey">generator</div>
+                <canvas id="lucas-meme" width="630" height="484">If you see this message, your browser does not support HTML5 canvas. Please <a href="http://browsehappy.com/">upgrade your browser</a> to use this app.</canvas>
+                <div class="text-line grey" id="first-line-holder">has a</div>
+                <div class="text-line black" id="second-line-holder">MEME</div>
+                <div class="text-line grey" id="third-line-holder">generator</div>
+                <img id="lucas_img" width="630" height="484" style="display: none;" src="images/lucas-is-a-meme.jpg"/>
             </div>
             <div class="right">
                 <h1>Make a Lucas Meme</h1>
-                <div class="input-line one">
-                    <input type="text" name="First Line" value="has a">
+                <div class="input-line">
+                    <input type="text" name="First Line" id="first-line" font-size="44" value="has a">
                 </div>
-                <div class="input-line two">
-                    <input type="text" name="Second Line" value="MEME">
+                <div class="input-line">
+                    <input type="text" name="Second Line" id="second-line" font-size="44" value="MEME">
                 </div>
-                <div class="input-line three">
-                    <input type="text" name="Third Line" value="generator">
+                <div class="input-line">
+                    <input type="text" name="Third Line" id="third-line" font-size="44" value="generator">
                 </div>
                 <button class="save-button">
                     <a href="#">Save</a>
@@ -58,8 +60,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"></script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/script.js"></script>
 
         
         </script>
