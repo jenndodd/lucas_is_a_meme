@@ -1,18 +1,3 @@
-function resizeText(context,text,fontSize,key,maxWidth){
-	var lineWidth = context.measureText(text).width;
-	if((lineWidth > maxWidth) && (key != 8) && (key != 46)){
-		fontSize-=2;
-		return fontSize;
-	}
-	else if((lineWidth < maxWidth) && (fontSize < 30) && (key == 8 || key == 46)){
-		fontSize = parseInt(fontSize)+2;
-		return fontSize;
-	}
-	else{
-		return fontSize;
-	}
-}
-
 function resizeDivText(context,fontSize,key,maxWidth){
 	var lineWidth = context.width();
 	//alert('width: '+lineWidth);
@@ -107,10 +92,22 @@ $(document).ready(function(){
 		drawText(ctx2,text2,$("#second-line-holder").css('color'),$("#second-line").attr('font-size'),58,190);
 		drawText(ctx2,$("#third-line-holder").text(),$("#third-line-holder").css('color'),$("#third-line").attr('font-size'),58,228);
 		
-		var newImg = c2.toDataURL("image/jpg");
-		//$('#image_holder').empty().append('<img src="'+newImg+'" />');
+		var newImg = c2.toDataURL("image/png");
+		var dataString = "imgData="+newImg;
 		
-		var new_window = window.open("","","width=800,height=650");
-		new_window.document.write('<img src="'+newImg+'" />');
-	})
+		$.ajax({
+			type: "POST",
+			contentType: 'application/x-www-form-urlencoded',
+			url: "php/save_image.php",
+			data: dataString,
+			success: function(data){
+				//$('.container').append('<img src="saved/'+data+'" />');
+				$('#image_holder').empty().append('<div id="popup_holder"><img src="saved/'+data+'" /><p>Right-click to save your image.</p></div>');
+				//open the colorbox
+				$.colorbox({width: "672px",height:"624px",opacity: 0.6,scrolling: false,inline:true,href:$('#popup_holder')});
+			}
+		});
+		//$('#image_holder').empty().append('<div id="popup_holder"><img src="'+newImg+'" /><p>Right-click to save your image.</p></div>');
+		
+	});
 });

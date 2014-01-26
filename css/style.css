@@ -175,6 +175,7 @@ input#second-line{
   text-decoration: underline;
 }
 
+
 /*
  * Share buttons
  */
@@ -208,6 +209,13 @@ footer {
 footer img {
   width: 100px;
   
+}
+
+#popup_holder{
+  background: #EEE;
+  width: 630px;
+  height: 550px;
+  padding: 20px;
 }
 
 /*
