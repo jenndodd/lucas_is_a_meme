@@ -10,7 +10,7 @@
         <meta property="og:title" content="Lucas is a Meme" />
         <meta name="description" content="rowse, make, and share Lucas memes!">
         <meta property="og:description" content="Browse, make, and share Lucas memes!" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -58,7 +58,7 @@
         </button>
 
         <footer>
-                <a href="www.venmo.com"><img  src="images/venmo_logo.png"></a>
+                <a href="http://www.venmo.com" target="blank"><img  src="images/venmo_logo.png"></a>
             </footer>
         </div>
 

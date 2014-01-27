@@ -10,7 +10,7 @@
         <meta property="og:title" content="Lucas is a Meme" />
         <meta name="description" content="rowse, make, and share Lucas memes!">
         <meta property="og:description" content="Browse, make, and share Lucas memes!" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=675"/>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -31,7 +31,7 @@
 					echo '<img src="saved/'.$img.'.png" alt="Lucas is a meme">';
 				}
 				else{
-					echo '<p>Oops! No image specified.</p>';
+					echo '<img src="images/lucas-likes-memes.jpg" alt="Lucas is a meme">';
 				}
 			?>
             </div>
@@ -44,8 +44,11 @@
               <a class="addthis_button_compact"></a>
             </div>
             <!-- AddThis Button END -->
+            <button class="make-button">
+            <a href="index.html">Make one!</a>
+            </button>
             <footer>
-                <a href="www.venmo.com"><img  src="images/venmo_logo.png"></a>
+                <a href="http://www.venmo.com" target="blank"><img  src="images/venmo_logo.png"></a>
             </footer>
          </div>
           <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e56f6472994223"></script>

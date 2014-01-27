@@ -79,6 +79,10 @@ $(document).ready(function(){
 	
 	$(document).on('click','.save-button',function(){
 		//drawText(text,color,fontSize,x,y)
+		if(line1.text() == 'has a' && line2.text() == 'MEME' && line3.text() == 'generator'){
+			alert('Be more original!');
+		}
+		else{
 		$('#image_holder').empty().append('<canvas id="generated" width="630" height="484"></canvas>');
 		
 		var c2=document.getElementById("generated");
@@ -90,7 +94,7 @@ $(document).ready(function(){
 		
 		drawText(ctx2,$("#first-line-holder").text(),$("#first-line-holder").css('color'),$("#first-line").attr('font-size'),58,144);
 		drawText(ctx2,text2,$("#second-line-holder").css('color'),$("#second-line").attr('font-size'),58,190);
-		drawText(ctx2,$("#third-line-holder").text(),$("#third-line-holder").css('color'),$("#third-line").attr('font-size'),58,228);
+		drawText(ctx2,$("#third-line-holder").text(),$("#third-line-holder").css('color'),$("#third-line").attr('font-size'),58,232);
 		
 		var newImg = c2.toDataURL("image/png");
 		var dataString = "imgData="+newImg;
@@ -108,6 +112,7 @@ $(document).ready(function(){
 				$.colorbox({width: "672px",height:"660px",opacity: 0.6,scrolling: false,inline:true,href:$('#popup_holder')});
 			}
 		});
+		}
 		//$('#image_holder').empty().append('<div id="popup_holder"><img src="'+newImg+'" /><p>Right-click to save your image.</p></div>');
 		
 	});

@@ -56,6 +56,32 @@
   width:148px;
  }
 
+ .make-button {
+  background-color: rgb(52, 152, 219);
+  border: none;
+  box-shadow: 0 -3px 0 rgba(0,0,0,0.15) inset;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  border-radius: 4px;
+  padding: 10px 25px;
+  margin: 35px auto 0px auto;
+  width: 130px;
+}
+
+.make-button:hover {
+  background-color: rgba(52, 152, 219, .8);
+}
+
+.make-button a {
+  color: #FFF;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
  footer {
   padding: 30px;
   margin: 0 auto;
@@ -65,5 +91,29 @@
 footer img {
   width: 100px;
   
+}
+
+/*
+ *Media Queries for mobile meme makers
+ */
+
+ @media (max-width: 959px) {
+  .container {
+    margin: 0 auto;
+    width: 640px;
+  }
+
+  .left {
+    float:none;
+    margin: 75px auto 0px auto;
+  }
+
+  .right {
+    float: none;
+    margin: 30px auto;
+  }
+  
+
+
 }
  
