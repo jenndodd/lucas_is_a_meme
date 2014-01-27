@@ -102,9 +102,10 @@ $(document).ready(function(){
 			data: dataString,
 			success: function(data){
 				//$('.container').append('<img src="saved/'+data+'" />');
-				$('#image_holder').empty().append('<div id="popup_holder"><img src="saved/'+data+'" /><p>Right-click to save your image.</p></div>');
+				var page = data.replace('.png', '');
+				$('#image_holder').empty().append('<div id="popup_holder"><img src="saved/'+data+'" /><p class="instructions">Right click or tap and hold to save... or use the links below to share!</p><div class="addthis_toolbox addthis_default_style addthis_32x32_style add_this_strip" addthis:url="http://lucasisame.me/meme.php?page='+page+'"><a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2"></a><a class="addthis_button_preferred_3"></a><a class="addthis_button_compact"></a></div><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e56f6472994223"></script></div>');
 				//open the colorbox
-				$.colorbox({width: "672px",height:"624px",opacity: 0.6,scrolling: false,inline:true,href:$('#popup_holder')});
+				$.colorbox({width: "672px",height:"660px",opacity: 0.6,scrolling: false,inline:true,href:$('#popup_holder')});
 			}
 		});
 		//$('#image_holder').empty().append('<div id="popup_holder"><img src="'+newImg+'" /><p>Right-click to save your image.</p></div>');

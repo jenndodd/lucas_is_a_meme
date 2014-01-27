@@ -13,6 +13,12 @@
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text.css" href="css/style.css">
         <link rel="stylesheet" type="text.css" href="css/responsive_gallery.css">
+		<script>
+			var addthis_config = {
+				services_overlay:'facebook,twitter,email,more'
+			}
+		</script>
+		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-52e563456d6f3bdf"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -23,18 +29,20 @@
         <div class="container">
         
         <ul class="gallery-list">
-            <li><img src="images/lucas-gallery-1.jpg" alt="waffles"></li>
-            <li><img src="images/lucas-gallery-2.jpg" alt="allergic"></li>
-            <li><img src="images/lucas-gallery-3.jpg" alt="wallet"></li>
-            <li><img src="images/lucas-gallery-4.jpg" alt="not into you"></li>
-            <li><img src="images/lucas-gallery-5.jpg" alt="Notebook"></li>
-            <li><img src="images/lucas-gallery-6.jpg" alt="whistle"></li>
-            <li><img src="images/lucas-gallery-7.jpg" alt="your mom"></li>
-            <li><img src="images/lucas-gallery-8.jpg" alt="fat"></li>
-            <li><img src="images/lucas-gallery-9.jpg" alt="world"></li>
-            <li><img src="images/lucas-gallery-10.jpg" alt="spies"></li>
-            <li><img src="images/lucas-gallery-11.jpg" alt="joke"></li>
-            <li><img src="images/lucas-gallery-12.jpg" alt="saddle"></li>
+            <?php
+				if ($handle = opendir('saved')) {
+					
+					while (false !== ($entry = readdir($handle))) {
+						$page = str_replace('.png', '', $entry);
+						echo "<li><img class='addthis_shareable' src='saved/$entry' addthis:url='http://jenndodd.com/lucas/?page=$page' alt='meme' /></li>";
+					}
+		
+					closedir($handle);
+				}
+				else{
+					echo '<p>Could not find any images.</p>';
+				}
+			?>
         </ul>
 
 
@@ -48,8 +56,5 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"></script>')</script>
         <script src="js/vendor/jquery.colorbox-min.js"></script>
         <script src="js/script.js"></script>
-
-        
-        </script>
     </body>
 </html>

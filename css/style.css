@@ -175,31 +175,6 @@ input#second-line{
   text-decoration: underline;
 }
 
-
-/*
- * Share buttons
- */
-
-/*ul.share {
-  width: 90px;
-  margin: 25px auto;
-}
-
-.share li {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-}
-
-.share li:hover {
-  opacity: .8;
-}
-
-.share li:first-child {
-  padding-right: 5px;
-}
-*/
-
 footer {
   padding: 30px;
   margin: 0 auto;
@@ -211,19 +186,40 @@ footer img {
   
 }
 
+/*
+ * Popup Styles
+ */
+
 #popup_holder{
-  background: #EEE;
+  background: #3e94cf;
   width: 630px;
   height: 550px;
   padding: 20px;
 }
+
+ p.instructions {
+   color: #FFF;
+   font-size: 18px;
+   text-align: center;
+   padding: 20px;
+ }
+
+.add_this_strip {
+  display: block;
+  margin: 0 auto;
+  width:148px;
+ }
+
+ #popup_holder img {
+   box-shadow: 0px 0px 10px #333;
+ }
 
 /*
  * Gallery styles
  */
 
 ul.gallery-list{
-  margin-top: 75px;
+  margin-top: 30px;
 }
 
 .gallery-list li {
@@ -234,6 +230,32 @@ ul.gallery-list{
 .gallery-list li img {
   box-shadow: 0px 0px 10px #333;
   width: 300px;
+}
+
+.back-button {
+  background-color: rgb(52, 152, 219);
+  border: none;
+  box-shadow: 0 -3px 0 rgba(0,0,0,0.15) inset;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  border-radius: 4px;
+  padding: 10px 25px;
+  margin: 35px auto 0px auto;
+  width: 90px;
+}
+
+.back-button:hover {
+  background-color: rgba(52, 152, 219, .8);
+}
+
+.back-button a {
+  color: #FFF;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  text-align: center;
+  text-decoration: none;
 }
 
 /*
